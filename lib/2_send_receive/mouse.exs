@@ -2,7 +2,7 @@
 defmodule Cat do
   def create do
     receive do
-      :hi -> IO.puts("Hey, what's up?")
+      :how_is_it_going -> IO.puts("Good!")
     end
   end
 end
@@ -11,7 +11,7 @@ end
 cat = spawn(Cat, :create, [])
 
 # Send the message
-send(cat, :hi)
+send(cat, :how_is_it_going)
 
 # Rsult:
-# "Hey, what's up?"
+# "Good!"
