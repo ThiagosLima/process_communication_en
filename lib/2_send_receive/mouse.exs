@@ -13,5 +13,5 @@ cat = spawn(Cat, :create, [])
 # Send the message
 send(cat, :how_is_it_going)
 
-# Rsult:
+# Result:
 # "Good!"
